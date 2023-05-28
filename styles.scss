@@ -1,0 +1,158 @@
+@import "styles/media-queries";
+
+*{
+    margin:0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url(assets/fondo-pokemon-2.webp);
+    background-position: center;
+    background-size: cover;
+    &__logo{
+        width: 40%;
+    }
+    &__contenedor{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+    }
+    &__buscador{
+        background-color: #f9cf45;
+        width: 100%;
+        height: 40px;
+        border: 1px solid #464646;
+        padding: 0 10px;
+        font-weight: bold;
+        color: #2b374b;
+        outline-offset: -1px;
+        box-shadow: 0px 0px 27px 27px #3761A8;
+        border-radius: 10px;
+        margin-bottom: 27px;
+        text-align: initial;
+    }
+    &__boton{
+        background-color: #3761A8;
+        width: 40%;
+        height: 40px;
+        border: 0px solid #f9cf45;
+        padding: 0px 10px;
+        font-weight: bold;
+        color: #f9cf45;
+        margin: 20px 0;
+        border-radius: 20px;
+        font-size: 26px;
+        box-shadow: 4px 5px 10px 1px #000;
+    }
+}
+
+.main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__div{
+        width: 100%;
+    background-image: url(assets/Diseño\ sin\ título\ \(2\).png);
+    height: 500px;
+    background-size: cover;
+    background-position-y: center;
+    display: flex;
+    justify-content: space-around;
+    }
+    &__header{
+        display: flex;
+        width: 95%;
+        align-items: center;
+        justify-content: center; 
+        flex-wrap: wrap;
+        margin: -120px 0 10px 0;
+    }
+     &__tarjeta{
+        width: 15%;
+        height: 300px;
+        margin: 20px 2%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: rgb(200, 200, 200);
+        border-radius: 50px;
+        background-image: url(assets/2.png);
+        background-size: cover;
+        background-position-y: center;
+        background-position-x: center;
+        border: 2px solid #000;
+    }
+    &__img{
+        width: 120px;
+    }
+    &__nombre{
+        font-weight: bold;
+        margin-top: 75px;
+        font-size: 25px;
+        text-align: center;
+    }
+    &__footer{
+        display: flex;
+        width: 90%;
+        justify-content: space-around;
+        margin-top: 30px;
+        align-items: center;
+    }
+    &__id{
+        color: rgb(224, 224, 10);
+        font-size: 20px;
+    }
+    &__tipo{
+        color: #ffffff;
+        font-size: 15px;
+        font-weight: 700;
+    }
+    &__ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 10px 0;
+        height: 117px;
+        width: 40%;
+        justify-content: center;
+        align-items: center;
+    }
+    &__li{
+        color: #ffffff;
+        width: 15%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 10px;
+        padding: 20px 10px;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    &__li:hover{
+        color:#f9cf45;
+    }
+}
